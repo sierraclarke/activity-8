@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    @IBOutlet weak var word: UILabel!
+    @IBAction func change(_ sender: Any) {
+        word.text = "Hello"
     }
-
-
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
 }
-
